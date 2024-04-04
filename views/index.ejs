@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+           _ _  ___                  _   
+   ___  __| (_)/ _ \ _ __ ___   ___ | |_
+  / _ \/ _` | | (_) | '__/ _ \ / _ \| __|
+ |  __/ (_| | |\__, | | | (_) | (_) | |_
+  \___|\__,_|_|  /_/|_|  \___/ \___/ \__|
+  -->
+<html>
+
+<head>
+    <title>Cocktail Crafter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+    <section>
+        <h1 class="title">Cocktail Crafter</h1>
+
+        <h2>we will find cocktails you can make!</h2>
+
+        <p>
+            <%= content %>
+        </p>
+
+        <form id="form" action="/get-cocktail" method="post">
+            <div class="input-control">
+                <label for="">ingredient</label>
+                <input type="text" name="ingredient" placeholder="Enter ingredient">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <button type="submit">Submit</button>
+                <small>Error message</small>
+            </div>
+        </form>
+
+    </section>
+
+    <div id="particles-js"></div>
+
+    <script src="styles/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+    <script src="styles/particle-config.js"></script>
+</body>
+
+</html>
