@@ -22,7 +22,7 @@
 - VS Code
 
 ## How to Run
-1. ### `npm start`
+1. ### `npm i`
 2. ### `Node index.js`
 3. ### `Open` [http://localhost:3000](http://localhost:3000)
 
